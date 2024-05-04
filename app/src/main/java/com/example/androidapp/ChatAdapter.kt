@@ -5,9 +5,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.androidapp.models.ChatList_chat
 
 
-class ChatAdapter(private val chatItems: List<Chat>) : RecyclerView.Adapter<ChatAdapter.ChatViewHolder>() {
+class ChatAdapter(private val chatListchatItems: List<ChatList_chat>) : RecyclerView.Adapter<ChatAdapter.ChatViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_chat, parent, false)
@@ -15,19 +16,19 @@ class ChatAdapter(private val chatItems: List<Chat>) : RecyclerView.Adapter<Chat
     }
 
     override fun onBindViewHolder(holder: ChatViewHolder, position: Int) {
-        val currentItem = chatItems[position]
+        val currentItem = chatListchatItems[position]
         holder.bind(currentItem)
     }
 
-    override fun getItemCount() = chatItems.size
+    override fun getItemCount() = chatListchatItems.size
 
     inner class ChatViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val textViewChatTitle: TextView = itemView.findViewById(R.id.textViewChatTitle)
         private val textViewLastMessage: TextView = itemView.findViewById(R.id.textViewLastMessage)
 
-        fun bind(chat: Chat) {
-            textViewChatTitle.text = chat.title
-            textViewLastMessage.text = chat.lastMessage
+        fun bind(chatListchat: ChatList_chat) {
+            textViewChatTitle.text = chatListchat.title
+            textViewLastMessage.text = chatListchat.lastMessage
         }
     }
 }
