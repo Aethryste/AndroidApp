@@ -1,4 +1,4 @@
-package com.example.androidapp
+package com.example.androidapp.utils
 
 class ChatLogger {
     val simpleArray = arrayOf("test", "test", "test")
