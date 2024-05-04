@@ -7,6 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import java.io.FileOutputStream
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,6 +27,16 @@ class MainActivity : AppCompatActivity() {
         val adapter = ChatAdapter(sampleChatItems)
         recyclerViewChatList.adapter = adapter
         recyclerViewChatList.layoutManager = LinearLayoutManager(this)
+
+//        setContentView(R.layout.chat_window)
+//
+//        sendButton = findCiewById()
+//
+//        sendButton.setOnClickListener{
+//
+//            val file = chatDisplay.text.toString()
+//            val fileOutputStream: FileOutputStream
+//        }
 
         enableEdgeToEdge()
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
