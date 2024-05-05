@@ -10,7 +10,6 @@ object IdGenerator {
     }
 }
 
-// Example usage
 fun main() {
     val id = IdGenerator.get()
     println("Generated ID: $id")

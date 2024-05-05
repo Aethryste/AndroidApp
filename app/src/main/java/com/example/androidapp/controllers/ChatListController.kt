@@ -11,8 +11,6 @@ object ChatListController {
 
     fun init(recyclerView: RecyclerView) {
         recyclerViewChatList = recyclerView
-
-        // Generate sample chat items
         val sampleChatItems = ChatItemGenerator.generateSampleChatItems()
         val adapter = ChatAdapter(sampleChatItems)
         recyclerViewChatList.adapter = adapter

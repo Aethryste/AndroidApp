@@ -3,10 +3,8 @@ package com.example.androidapp.services
 import org.json.JSONObject
 import java.io.BufferedOutputStream
 import java.io.BufferedReader
-import java.io.InputStreamReader
 import java.net.HttpURLConnection
 import java.net.URL
-import java.net.URLEncoder
 
 object ChatService {
 

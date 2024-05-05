@@ -1,17 +1,14 @@
 package com.example.androidapp.utils
 
-import com.example.androidapp.models.ChatList_chatButton
+import com.example.androidapp.models.ChatListBtn
 
-// ChatItemGenerator.kt
 object ChatItemGenerator {
-
-    fun generateSampleChatItems(): List<ChatList_chatButton> {
-        val chatListchatItems = mutableListOf<ChatList_chatButton>()
+    fun generateSampleChatItems(): List<ChatListBtn> {
+        val chatListchatItems = mutableListOf<ChatListBtn>()
         // Add sample chat items here
         for (i in 1..5) {
-            chatListchatItems.add(ChatList_chatButton("Chat $i", "Last message in chat $i"))
+            chatListchatItems.add(ChatListBtn("Chat $i", "Last message in chat $i"))
         }
         return chatListchatItems
     }
-
 }
