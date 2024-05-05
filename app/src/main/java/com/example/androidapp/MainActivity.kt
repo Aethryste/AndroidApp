@@ -14,22 +14,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        ToolbarController.init(this)
+
+        // Initialize chat-list in viewport using ChatListController
+        ChatListController.init(findViewById(R.id.recyclerViewChatList))
+
 
         val nextButton = findViewById<Button>(R.id.nextbtn)
 
         nextButton.setOnClickListener{
             startActivity(Intent(this@MainActivity, ChatWindow::class.java))
         }
-
-        //ToolbarController.init(this)
-
-
-        // Initialize chat-list in viewport using ChatListController
-        //ChatListController.init(findViewById(R.id.recyclerViewChatList))
-
-        // Other code here.
-
-     //   ChatWindowController.init(this)
 
         enableEdgeToEdge()
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
