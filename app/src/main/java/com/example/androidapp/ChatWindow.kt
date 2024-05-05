@@ -5,12 +5,20 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.widget.Button
+import android.widget.ImageButton
 
 class ChatWindow : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.chat_window)
 
+        val backButton = findViewById<ImageButton>(R.id.backbtn)
+
+        backButton.setOnClickListener{
+            finish()
+
+        }
 
 
         // Initialize chat-list in viewport using ChatListController

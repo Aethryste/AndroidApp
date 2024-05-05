@@ -24,11 +24,15 @@
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/chatInput"
         android:layout_width="275dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="65dp"
         android:layout_marginBottom="15dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTint="#FFFFFF"
+        android:foregroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="this" />
 
     <ImageButton
         android:id="@+id/backbtn"
