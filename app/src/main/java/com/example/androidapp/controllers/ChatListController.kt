@@ -18,9 +18,4 @@ object ChatListController {
         recyclerViewChatList.adapter = adapter
         recyclerViewChatList.layoutManager = LinearLayoutManager(recyclerView.context)
     }
-
-    @JvmStatic
-    fun main(args: Array<String>) {
-
-    }
 }
