@@ -1,6 +1,7 @@
 package com.example.androidapp
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,9 +16,10 @@ class ChatWindow : AppCompatActivity() {
         ChatTopBar.init(this)
         setContentView(R.layout.chat_window)
 
-        val backButton = findViewById<ImageButton>(R.id.backbtn)
 
-        backButton.setOnClickListener{
+        val backbtn = findViewById<ImageButton>(R.id.backbtntopbar)
+
+        backbtn.setOnClickListener{
             finish()
 
         }

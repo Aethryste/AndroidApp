@@ -20,17 +20,6 @@
             layout="@layout/chatwindowbottombar" />
     </RelativeLayout>
 
-    <ImageButton
-        android:id="@+id/backbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="100dp"
-        android:background="#00FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/actionModeCloseDrawable" />
-
     <include
         android:id="@+id/topbar"
         layout="@layout/chatwindowtopbar"

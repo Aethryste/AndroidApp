@@ -8,14 +8,13 @@ object ChatTopBar {
 
     fun init(activity: Activity) {
 //        val backbtn: View = activity.findViewById(R.id.backbtntopbar)
-//        backbtn.setOnClickListener {
+//
+//          }
 //
 //
-//        }
-
-
-
         }
-    }
+
+
+}
 
 
